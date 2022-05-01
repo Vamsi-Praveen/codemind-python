@@ -1,5 +1,5 @@
-a=int(input())
-for x in range(a,0,-1):
-    for y in range(a,0,-1):
-        print(y,end=" ")
+x=int(input())
+for i in range(1,x+1):
+    for j in range(1,x+1):
+        print(chr(i+64),end=' ')
     print()
