@@ -1,4 +1,3 @@
-n=input()
-w=n.split()
-string=" ".join(reversed(w))
-print(string)
+s=input().split()
+s=s[::-1]
+print(*s)
