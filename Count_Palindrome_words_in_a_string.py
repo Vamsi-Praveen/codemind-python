@@ -1,8 +1,6 @@
-l=[]
-st=input()
-st=st.lower()
-for word in st.split():
-    if word==word[::-1]:
-        l.append(word) 
-
-print(len(l))
+s=input().lower().split()
+c=0
+for i in s:
+    if i==i[::-1]:
+        c+=1
+print(c)
