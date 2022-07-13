@@ -1,10 +1,5 @@
-s=input()
-s=s.lower()
-# print(s)
-str = ""
-for i in s:
-    str = i + str
-if str==s:
-    print('True')
+s=input().lower()
+if s==s[::-1]:
+    print(True)
 else:
-    print('False')
+    print(False)
