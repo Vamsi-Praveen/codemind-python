@@ -1,17 +1,17 @@
+def isprime(n):
+    if n==1 or n==0:
+        return 0
+    for i in range(2,n//2+1):
+        if n%i==0:
+            return 0
+    else:
+        return 1
 n=int(input())
+l=list(map(int,input().split()))
 Sum=0
-v=0
-arr=list(map(int,input().strip().split()))[:n]
-for i in range(0,len(arr)):
-    t=int(arr[i])
-    c=0
-    for j in range(1,t+1):
-        if t%j==0:
-            c+=1
-    if c==2:
-        v+=1
-        Sum=Sum+arr[i]
-            
-avg=Sum/v
-print("%.2f"%avg)
-        
+c=0
+for i in l:
+    if isprime(i):
+        Sum+=i
+        c+=1
+print("{:.2f}".format(Sum/c))
