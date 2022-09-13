@@ -16,4 +16,3 @@ if v!=0:
     print(*res)
 else:
     print(-1)
-
