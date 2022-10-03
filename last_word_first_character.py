@@ -1,4 +1,3 @@
-s=input()
-word=s.split()
-st=word[-1]
-print(st[0])
+s=input().split()
+x=s[len(s)-1]
+print(x[0:1])
