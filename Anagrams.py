@@ -1,13 +1,6 @@
-def is_anagram(s,s1):
-    for char in s:
-        if char not in s1:
-            return False
-    return True
-s=input()
-s1=input()
-s=s.lower()
-s1=s1.lower()
-if (is_anagram(s,s1)==True):
-    print('True')
+s=input().lower()
+s1=input().lower()
+if sorted(set(s))==sorted(set(s1)) and len(s)==len(s1):
+    print("True")
 else:
-    print('False')
+    print("False")
