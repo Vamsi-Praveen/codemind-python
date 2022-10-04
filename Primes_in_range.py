@@ -1,5 +1,5 @@
 def isprime(n):
-    if n==1:
+    if n==1 or n==0:
         return 0
     else:
         for i in range(2,int(n**0.5)+1):
